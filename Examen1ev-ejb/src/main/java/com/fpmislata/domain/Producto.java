@@ -16,6 +16,7 @@ public class Producto implements Serializable {
 
     private static final long serialVersionUID = 1L;
     private int id;
+    private String imagen;
     private String descripcion;
     private double precio;
     private int unidades;
@@ -23,8 +24,9 @@ public class Producto implements Serializable {
     public Producto() {
     }
 
-    public Producto(int id, String descripcion, double precio, int unidades) {
+    public Producto(int id, String imagen, String descripcion, double precio, int unidades) {
         this.id = id;
+        this.imagen = imagen;
         this.descripcion = descripcion;
         this.precio = precio;
         this.unidades = unidades;
@@ -90,7 +92,16 @@ public class Producto implements Serializable {
 
     @Override
     public String toString() {
-        return "Producto{" + "id=" + id + ", descripcion=" + descripcion + ", precio=" + precio + ", unidades=" + unidades + '}';
+        return "Producto{" + "id=" + id + ", imagen=" + imagen + ", descripcion=" + descripcion + ", precio=" + precio + ", unidades=" + unidades + '}';
+    }
+
+    
+    public String getImagen() {
+        return imagen;
+    }
+
+    public void setImagen(String imagen) {
+        this.imagen = imagen;
     }
     
     

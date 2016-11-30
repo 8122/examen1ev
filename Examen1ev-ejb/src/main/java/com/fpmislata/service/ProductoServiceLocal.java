@@ -20,12 +20,10 @@ public interface ProductoServiceLocal {
 
     ArrayList listCarrito();
 
-    Producto findProductoById(Producto producto, ArrayList lista);
+    Producto findProductoTienda(Producto producto);
 
-    void addProducto(Producto producto, ArrayList lista);
+    void addProductoCarrito(Producto producto);
 
-    void deleteProducto(Producto producto, ArrayList lista);
-
-    void updateProducto(Producto producto, ArrayList lista);
+    void deleteProductoCarrito(Producto producto);
     
 }
